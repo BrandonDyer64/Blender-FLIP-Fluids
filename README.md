@@ -12,19 +12,22 @@ The **OpenFLIP** simulator was created as an alternative to the FLIP Fluids addo
 
 <https://ninja-build.org/>
 
-#### Clone and Build
+#### Clone Repository
 
 ```bash
 git clone https://github.com/BrandonDyer64/OpenFLIP.git
 cd OpenFLIP
-mkdir bin && cd bin
-cmake -GNinja ../
-cmake --build .
+```
+
+#### Build
+
+```bash
+./build.sh
 ```
 
 #### Install Addon
 
-Move `OpenFLIP/bl_flip_fluids/bl_flip_fluids` into your Blender addons directory.
+Move `OpenFLIP/bl_open_flip/bl_open_flip` into your Blender addons directory.
 
 - Linux
   - `~/.config/blender/2.79/scripts/addons`
@@ -38,12 +41,12 @@ Move `OpenFLIP/bl_flip_fluids/bl_flip_fluids` into your Blender addons directory
 The core fluid engine, written in C++, is designed for running high performance computations and massive physics calculations efficiently. Multithreaded and extensively optimized, this simulator is built for speed.
     </td>
     <td>
-      <img src="http://rlguy.com/blender_flip_fluids/images/high_performance.jpg">
+      <img src="http://rlguy.com/blender_open_flip/images/high_performance.jpg">
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <img src="http://rlguy.com/blender_flip_fluids/images/whitewater_simulation.jpg">
+      <img src="http://rlguy.com/blender_open_flip/images/whitewater_simulation.jpg">
     </td>
     <td valign="top">
 <h3>Whitewater Effects</h3>
@@ -56,12 +59,12 @@ Create awesome large scale fluid effects with the whitewater simulator. Generate
 Use the highly accurate viscosity solver to simulate thin silky-smooth liquids, thick fluids that buckle and coil, and anything in between.
     </td>
     <td>
-      <img src="http://rlguy.com/blender_flip_fluids/images/viscosity_solver.jpg">
+      <img src="http://rlguy.com/blender_open_flip/images/viscosity_solver.jpg">
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <img src="http://rlguy.com/blender_flip_fluids/images/mesh_generation.jpg">
+      <img src="http://rlguy.com/blender_open_flip/images/mesh_generation.jpg">
     </td>
     <td valign="top">
 <h3>Built-in Mesh Generation</h3>
@@ -75,12 +78,12 @@ The built-in mesher generates highly detailed meshes so that your fluid surface 
 Create interesting destruction simulations by using the OpenFLIP addon with the Blender Fracture Modifier branch. The fluid engine is optimized to support fractured objects that may contain hundreds to thousands of individual pieces.
     </td>
     <td>
-      <img src="http://rlguy.com/blender_flip_fluids/images/fracture_modifier_support.jpg">
+      <img src="http://rlguy.com/blender_open_flip/images/fracture_modifier_support.jpg">
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <img src="http://rlguy.com/blender_flip_fluids/images/excellent_user_experience.jpg">
+      <img src="http://rlguy.com/blender_open_flip/images/excellent_user_experience.jpg">
     </td>
     <td valign="top">
 <h3>Excellent User Experience</h3>
@@ -93,7 +96,7 @@ The addon interface was designed with a focus on functionality and usability to 
 We ran a closed beta testing phase involving over 250 testers to ensure that this complex simulation system is reliable, intuitive, and ready for you to use in your projects. We gathered your feedback and added your suggestions. This addon is built for you!
     </td>
     <td>
-      <img src="http://rlguy.com/blender_flip_fluids/images/tested.jpg">
+      <img src="http://rlguy.com/blender_open_flip/images/tested.jpg">
     </td>
   </tr>
 </table>

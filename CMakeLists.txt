@@ -34,7 +34,7 @@ endfunction(set_output_directories)
 option(DISTRIBUTE_SOURCE "Include source code in addon" ON)
 option(WITH_OPENCL "Compile project with OpenCL features" ON)
 
-project(bl_flip_fluids)
+project(bl_open_flip)
 set(CMAKE_BUILD_TYPE Release)
 
 set(FLUIDENGINE_VERSION_MAJOR 1)
@@ -106,29 +106,29 @@ file(GLOB SOURCES "src/engine/*.cpp" "src/engine/c_bindings/*.cpp" "src/engine/k
 add_library(objects OBJECT ${SOURCES})
 
 # Test executable
-set(TEST_DIR "${CMAKE_BINARY_DIR}/bl_flip_fluids/test")
+set(TEST_DIR "${CMAKE_BINARY_DIR}/bl_open_flip/test")
 set_output_directories("${TEST_DIR}")
-add_executable(bl_flip_fluids $<TARGET_OBJECTS:objects>)
+add_executable(bl_open_flip $<TARGET_OBJECTS:objects>)
 set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "engine_test")
 if(WITH_OPENCL)
-    target_link_libraries(bl_flip_fluids "${OpenCL_LIBRARY}")
+    target_link_libraries(bl_open_flip "${OpenCL_LIBRARY}")
 endif()
 
 # Pyfluid library
-set(PYTHON_MODULE_DIR "${CMAKE_BINARY_DIR}/bl_flip_fluids/pyfluid")
-set(PYTHON_MODULE_LIB_DIR "${CMAKE_BINARY_DIR}/bl_flip_fluids/pyfluid/lib")
+set(PYTHON_MODULE_DIR "${CMAKE_BINARY_DIR}/bl_open_flip/pyfluid")
+set(PYTHON_MODULE_LIB_DIR "${CMAKE_BINARY_DIR}/bl_open_flip/pyfluid/lib")
 set_output_directories("${PYTHON_MODULE_LIB_DIR}")
 add_library(pyfluid SHARED $<TARGET_OBJECTS:objects>)
-if(WITH_OPENCL) 
+if(WITH_OPENCL)
     target_link_libraries(pyfluid "${OpenCL_LIBRARY}")
 endif()
 file(COPY "${CMAKE_SOURCE_DIR}/src/engine/pyfluid/" DESTINATION "${PYTHON_MODULE_DIR}")
 
 # Blender addon
-set(BLENDER_ADDON_DIR "${CMAKE_BINARY_DIR}/bl_flip_fluids/flip_fluids_addon")
+set(BLENDER_ADDON_DIR "${CMAKE_BINARY_DIR}/bl_open_flip/open_flip_addon")
 set_output_directories("${BLENDER_ADDON_DIR}/pyfluid/lib")
 add_library(blpyfluid SHARED $<TARGET_OBJECTS:objects>)
-if(WITH_OPENCL) 
+if(WITH_OPENCL)
     target_link_libraries(blpyfluid "${OpenCL_LIBRARY}")
 endif()
 file(COPY "${CMAKE_SOURCE_DIR}/src/addon/" DESTINATION "${BLENDER_ADDON_DIR}")
@@ -141,7 +141,6 @@ if(DISTRIBUTE_SOURCE)
         "${CMAKE_SOURCE_DIR}/CMakeLists.txt"
         "${CMAKE_SOURCE_DIR}/LICENSE_GPLv3.md"
         "${CMAKE_SOURCE_DIR}/LICENSE_MIT.md"
-        "${CMAKE_SOURCE_DIR}/LICENSE_Standard_Royalty_Free.md"
         "${CMAKE_SOURCE_DIR}/README.md"
     )
 

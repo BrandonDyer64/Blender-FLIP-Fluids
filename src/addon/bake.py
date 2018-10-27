@@ -1140,7 +1140,7 @@ def set_console_output(boolval):
 
 
 def __get_addon_version():
-    module = sys.modules["flip_fluids_addon"]
+    module = sys.modules["open_flip_addon"]
     addon_major, addon_minor, addon_revision = module.bl_info.get('version', (-1, -1, -1))
     return str(addon_major) + "." + str(addon_minor) + "." + str(addon_revision)
 

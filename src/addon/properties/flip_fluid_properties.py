@@ -33,7 +33,7 @@ class FlipFluidProperties(bpy.types.PropertyGroup):
 
         cls.custom_icons = bpy.utils.previews.new()
         cls.is_custom_icons_loaded = BoolProperty(False)
-        cls.logo_name = StringProperty("flip_fluids_logo")
+        cls.logo_name = StringProperty("open_flip_logo")
         cls.domain_object_name = StringProperty(default="")
 
 
@@ -151,7 +151,7 @@ class FlipFluidProperties(bpy.types.PropertyGroup):
 
     def _initialize_custom_icons(self):
         addon_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        logo_path = os.path.join(addon_dir, "icons", "flip_fluids_logo.png")
+        logo_path = os.path.join(addon_dir, "icons", "open_flip_logo.png")
         self.custom_icons.clear()
         self.custom_icons.load(self.logo_name, logo_path, 'IMAGE')
         self.is_custom_icons_loaded = True
