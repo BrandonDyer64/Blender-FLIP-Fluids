@@ -1,14 +1,10 @@
-# FLIP Fluids
+# OpenFLIP
 
-**FLIP Fluids** is a powerful liquid simulation plugin that gives you the ability to create high quality fluid effects all within [Blender](https://www.blender.org/), the free and open source 3D creation suite. Created by Ryan Guy and Dennis Fassbaender.
+**OpenFLIP** is a powerful liquid simulation plugin that gives you the ability to create high quality fluid effects all within [Blender](https://www.blender.org/), the free and open source 3D creation suite.
 
-The core fluid engine, a modern FLIP-based fluid solver, has been under development for over three years with over a year of development focused on tightly integrating the simulator into Blender as an addon.
-
-The **FLIP Fluids** simulator was created to improve on many aspects of Blender's internal Elbeem fluid simulation system such as speed, performance, accuracy, customizability, and user experience. We use a familiar and intuitive simulation workflow, so if you have experience with the internal fluid simulator or other fluid simulation software, you will be able to get yourself up and running with **FLIP Fluids** in no time!
+The **OpenFLIP** simulator was created as an alternative to the FLIP Fluids addon found on the Blender Market.
 
 ## Installation
-
-### From the Blender Market
 
 ### From Source
 
@@ -27,7 +23,7 @@ cmake --build .
 ```
 
 #### Install Addon
-Move `OpenFlip/bl_flip_fluids/bl_flip_fluids` into your Blender addons directory.
+Move `OpenFLIP/bl_flip_fluids/bl_flip_fluids` into your Blender addons directory.
 
 * Linux
   * `~/.config/blender/2.79/scripts/addons`
@@ -182,7 +178,6 @@ We ran a closed beta testing phase involving over 250 testers to ensure that thi
 
 ## System Requirements
 
-- Windows 7, Windows 8, Windows 8.1, or Windows 10
 - Blender 2.79 (64-bit)
 - CPU 64-bit Intel® or AMD® multi-core processor
 - 8 GB RAM minimum, 16 GB or more of RAM memory is highly recommended
@@ -192,26 +187,15 @@ We ran a closed beta testing phase involving over 250 testers to ensure that thi
 
 At this moment, support for Mac OS X and Linux is **experimental**. This means that the addon has not yet undergone extensive testing on OS X and Linux operating systems.
 
-If you are planning to purchase the addon for use on OS X or Linux we first **highly recommend** trying the [FLIP Fluids Demo](https://github.com/rlguy/Blender-FLIP-Fluids/wiki/FLIP-Fluids-Demo-Addon) to test if the simulator will work on your system.
-
 ## License
 
-This program uses multiple licenses. See the files ```LICENSE_GPLv3.md```, ```LICENSE_MIT.md```, and ```LICENSE_Standard_Royalty_Free.md``` for license details. In General:
+This program uses multiple licenses. See the files ```LICENSE_GPLv3.md``` and ```LICENSE_MIT.md``` for license details. In General:
 
 - The Blender addon code is licensed under the GPL.
 - The fluid engine is licensed under the MIT license.
-- Some addon content will be using a Standard Royalty Free license. This license may cover content such as media (images/textures/videos), Blend files, materials, presets. This content will only be included within the paid addon and will not be available on the GitHub project page.
 
 Source code files will state their license at the top of the file. Assets will include a license file and information in their containing directory.
 
 ### Source code availability
 
-The FLIP Fluids addon is developed in our team's own private repository. Due to licensing restrictions, the project source contained in this public repository cannot contain the royalty-free content (See [LICENSE_Standard_Royalty_Free.md](LICENSE_Standard_Royalty_Free.md)) of the Blender Market product and cannot contain features that depend upon the royalty-free content. This public repository will often not be up-to-date with the private development repository. The full source code including all features and royalty-free content is distributed with the Blender Market product.
-
-## Links
-
-- [Blender Market Page](https://www.blendermarket.com/products/flipfluids)
-- [Documentation and Wiki](https://github.com/rlguy/Blender-FLIP-Fluids-Beta/wiki)
-- [Bug/Issue Tracker](https://github.com/rlguy/Blender-FLIP-Fluids-Beta/issues)
-- [BlenderPhysics Page](http://blenderphysics.com/#filter=.FLIP-Fluids)
-- [Facebook Page](https://www.facebook.com/FLIPFluids/) | [Twitter](https://twitter.com/flipfluids)
+In the spirit of open source software, the OpenFLIP Blender addon will continue development right here, in this repository. Anyone who would like to contribute is free to open a pull request.
