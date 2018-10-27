@@ -2,7 +2,7 @@
 
 **OpenFLIP** is a powerful liquid simulation plugin that gives you the ability to create high quality fluid effects all within [Blender](https://www.blender.org/), the free and open source 3D creation suite.
 
-The **OpenFLIP** simulator was created as an alternative to the OpenFLIP addon found on the Blender Market.
+The **OpenFLIP** simulator was created as an alternative to the FLIP Fluids addon found on the Blender Market.
 
 ## Installation
 
@@ -23,10 +23,11 @@ cmake --build .
 ```
 
 #### Install Addon
+
 Move `OpenFLIP/bl_flip_fluids/bl_flip_fluids` into your Blender addons directory.
 
-* Linux
-  * `~/.config/blender/2.79/scripts/addons`
+- Linux
+  - `~/.config/blender/2.79/scripts/addons`
 
 ## Key Features
 
@@ -96,7 +97,7 @@ We ran a closed beta testing phase involving over 250 testers to ensure that thi
     </td>
   </tr>
 </table>
-	
+
 ### More Features
 
 <ul>
@@ -189,7 +190,7 @@ At this moment, support for Mac OS X and Linux is **experimental**. This means t
 
 ## License
 
-This program uses multiple licenses. See the files ```LICENSE_GPLv3.md``` and ```LICENSE_MIT.md``` for license details. In General:
+This program uses multiple licenses. See the files `LICENSE_GPLv3.md` and `LICENSE_MIT.md` for license details. In General:
 
 - The Blender addon code is licensed under the GPL.
 - The fluid engine is licensed under the MIT license.
