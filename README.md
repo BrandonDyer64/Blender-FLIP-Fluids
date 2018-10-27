@@ -109,7 +109,7 @@ We ran a closed beta testing phase involving over 250 testers to ensure that thi
             <li><span style="font-size: 13px;">Pause a simulation and resume baking at your convenience. Any simulation can be continued from the last baked frame even after a crash or computer shutdown.</span></li>
             <li><span style="font-size: 13px;">Set length of animation manually or automatically by framerate.</span></li>
             <li><span style="font-size: 13px;">Nearly all simulation settings can be keyframe animated.</span></li>
-            <li><span style="font-size: 13px;">Hover over any setting to view a tooltip description. Detailed settings documentation and tips are also available on the <a href="https://github.com/BrandonDyer64/OpenFLIP-Beta/wiki" rel="noopener noreferrer" target="_blank">Wiki</a>.</span></li>
+            <li><span style="font-size: 13px;">Hover over any setting to view a tooltip description. Detailed settings documentation and tips are also available on the <a href="https://github.com/BrandonDyer64/OpenFLIP/wiki" rel="noopener noreferrer" target="_blank">Wiki</a>.</span></li>
             <li><span style="font-size: 13px;">Want to keep the same level of simulation detail while resizing the domain? Lock the simulation voxel size and the addon will automatically adjust grid resolution as you resize the domain.</span></li>
             <li><span style="font-size: 13px;">Manage your scene cache directory. Operators will help you rename, move, copy, or delete your cache files.</span></li>
             <li><span style="font-size: 13px;">Advanced settings for power users who want to experiment with simulation accuracy and performance.</span></li>
