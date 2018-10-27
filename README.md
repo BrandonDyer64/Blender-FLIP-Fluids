@@ -6,17 +6,31 @@ The core fluid engine, a modern FLIP-based fluid solver, has been under developm
 
 The **FLIP Fluids** simulator was created to improve on many aspects of Blender's internal Elbeem fluid simulation system such as speed, performance, accuracy, customizability, and user experience. We use a familiar and intuitive simulation workflow, so if you have experience with the internal fluid simulator or other fluid simulation software, you will be able to get yourself up and running with **FLIP Fluids** in no time!
 
-## Getting the FLIP Fluids Addon
+## Installation
 
-You may purchase the **FLIP Fluids** addon on the [Blender Market](https://www.blendermarket.com/products/flipfluids). Purchasing a license entitles you to to full FLIP Fluids feature set and content, tool support, and helps ensure the continued development of the addon.
+### From the Blender Market
 
-#### Getting Support
+### From Source
 
-You can get support for the **FLIP Fluids** addon by reading the [documentation and wiki](https://github.com/rlguy/Blender-FLIP-Fluids-Beta/wiki) or through the Blender Market messaging system. Support is granted to all customers whom have purchased a license.
+#### Install GNinja
 
-## FLIP Fluids Beta
+<https://ninja-build.org/>
 
-A closed beta testing phase involving over 250 testers ran from February 13th to April 28th (2018). The project is no longer in beta. You may access old beta material here: [FLIP Fluids Beta Information](../../wiki/FLIP-Fluids-Beta-Information-and-Resources). Some beta resources may no longer available.
+#### Clone and Build
+
+```bash
+git clone https://github.com/BrandonDyer64/OpenFLIP.git
+cd OpenFLIP
+mkdir bin && cd bin
+cmake -GNinja ../
+cmake --build .
+```
+
+#### Install Addon
+Move `OpenFlip/bl_flip_fluids/bl_flip_fluids` into your Blender addons directory.
+
+* Linux
+  * `~/.config/blender/2.79/scripts/addons`
 
 ## Key Features
 
