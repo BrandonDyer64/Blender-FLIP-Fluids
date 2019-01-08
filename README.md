@@ -8,10 +8,6 @@ The **OpenFLIP** simulator was created as an alternative to the FLIP Fluids addo
 
 ### From Source
 
-#### Install GNinja
-
-<https://ninja-build.org/>
-
 #### Clone Repository
 
 ```bash
